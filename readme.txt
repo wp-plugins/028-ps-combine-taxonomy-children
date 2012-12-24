@@ -4,9 +4,10 @@ Tags: taxonomy tree list category combine
 Requires at least: 3.4.x
 Tested up to: 3.5
 
-wordpress combine category(taxonomy)'s long children.
+combine category(taxonomy)'s long children for wordpress
+
 == Description ==
-* Open,Combine category( taxonomy ) 's children.
+* Open/Combine category( taxonomy ) 's children.
 
 
 = Functions =
