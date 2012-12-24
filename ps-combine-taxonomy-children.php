@@ -4,7 +4,7 @@ Plugin Name: 028 ps combine taxonomy children
 Plugin URI: http://wordpress.org/extend/plugins/028-ps-combine-taxonomy-children/
 Description: Combine Taxonomy Children
 Author: Wang Bin (oh@prime-strategy.co.jp)
-Version: 1.0
+Version: 1.1
 Author URI: http://www.prime-strategy.co.jp/about/staff/oh/
 */
 
@@ -133,7 +133,7 @@ class ps_combine_taxonomy_children{
 		/*
 		*インクルードファイルを確認
 		*/
-		if ( ! $this->ps_include_once( )):
+		if ( ! $this->ps_include_once( ) && $this->include_items_flag === true ):
 			return;
 		endif;    
 
@@ -261,7 +261,9 @@ class ps_combine_taxonomy_children{
 			
 		endif;
 
-		add_action('admin_notices', array( &$this, 'admin_notices_include_once'));
+		if ( $this->include_items_flag === true ):
+			add_action('admin_notices', array( &$this, 'admin_notices_include_once'));
+		endif;
 		
 		return false;
 	}

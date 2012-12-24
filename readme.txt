@@ -33,7 +33,7 @@ combine category(taxonomy)'s long children for wordpress
 = Version 1.0 (2012-12-21) =
 * PUBLISH: [028 Ps Combine Taxonomy Children] release
 * MESSAGE: [028 Ps Combine Taxonomy Children] 3.5 Validated
-
+* Fix : [028 Ps Combine Taxonomy Children] 1.1 no display admin_notices
 
 == Screenshots ==
 1. not the plugin show category list
