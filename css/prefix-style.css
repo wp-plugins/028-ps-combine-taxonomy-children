@@ -1,0 +1,30 @@
+@charset "utf-8";
+.form-field input.type_check {
+	border: none;
+	width: auto;
+}
+div.tabs-panel#category-all {
+	overflow: none;
+	height: auto;
+	min-height: 200px;
+	max-height: 5000px;
+}
+
+div.taxonomy-class{
+	overflow: none;
+	height: auto;
+	min-height: 200px;
+	max-height: 10000px;
+}
+
+.inline-edit-col-center {
+	display: none;
+}
+
+ul.children{
+	margin-left: 30px;
+}
+
+input.button{
+	padding: 0 5px 1px;
+}
