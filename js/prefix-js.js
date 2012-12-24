@@ -2,8 +2,13 @@
 	jQuery(document).ready(function( ) {
 		$("div.tabs-panel").css("max-height", "500px");
 		//サブカテゴリー全表示する
-		var _excludes_taxonomies = $("#_excludes_taxonomies").val();
-		var array_excludes = _excludes_taxonomies.split(',');
+
+		if ( jQuery.isEmptyObject( $("#_excludes_taxonomies") ) ){
+			var _excludes_taxonomies = $("#_excludes_taxonomies").val();
+			var array_excludes = _excludes_taxonomies.split(',');
+		}else{
+			var array_excludes =  new Array();
+		}
 
 		$( "div.tabs-panel" ).each(function(){
 			var tabs_panel = $(this);
