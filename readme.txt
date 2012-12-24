@@ -39,5 +39,3 @@ combine category(taxonomy)'s long children for wordpress
 1. not the plugin show category list
 2. show closed category's children list by the plugin
 3. open category's  children
-
-
